@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <title>Tratamento de dados - Curso JavaScript #06</title>
+    <style>
+
+        body{
+            font: 25px normal Arial;
+        }
+
+        nome{
+            font: 50px bold Comic;
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+
+        var nome = window.prompt("Qual é o seu nome?");
+        document.write(`Olá, ${nome}. Seu nome tem ${nome.length} letras.<br>`);
+        document.write(`Ei, ${nome}, seu nome todo minúsculo é ${nome.toLowerCase()}.<br>`);
+        document.write(`${nome}, seu nome MAIÚSCULO é ${nome.toUpperCase()}.`);
+
+    </script>
+</body>
+</html>

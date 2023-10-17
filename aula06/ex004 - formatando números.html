@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatando Números em JS</title>
+    <style>
+
+        body{
+            font: normal 25px Arial;
+        }
+
+        code{
+            color: brown;
+            font-style: italic;
+            font-weight: 900;
+        }
+        
+        h1{
+            color: rgb(45, 99, 1);
+        }
+
+    </style>
+</head>
+<body>
+    <p>
+        <h1>//Formatando Números</h1>
+        <hr>
+        <code>var num1 = 1543.5</code><br><br>
+        
+        <code>num1.toFixed(2)</code><br>
+        //considera 2 casas decimais, acrescenta o 0 ao final<br><br>
+        
+        <code>num1.toFixed(2).replace(".", ",")</code><br>
+        //Vai trocar o ponto pela vírgula, idêntico ao Python.<br><br>
+        
+        <code>num1.toLocaleString("pt-BR", {style: "currency", currency: "BRL"})</code><br>
+        //Vai transformar o numero em dinheiro. <br>
+        <hr>
+    </p>
+    <p><h5>Indo para o JavaScript...</h5></p>
+
+    <script>
+        var num1 = 1543.5
+        document.write(`${num1.toFixed(2)}<br>`);
+        document.write(`${num1.toFixed(2).replace(".", ",")}<br>`);
+        document.write(`${num1.toLocaleString("pt-BR", {style: "currency", currency: "BRL"})}<br>`);
+        document.write(`${num1.toLocaleString("pt-BR", {style: "currency", currency: "USD"})}<br>`);
+        document.write(`${num1.toLocaleString("pt-BR", {style: "currency", currency: "EUR"})}<br>`);
+    </script>
+
+</body>
+</html>
