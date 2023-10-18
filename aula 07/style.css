@@ -1,0 +1,17 @@
+.lista-operadores{
+    color: rgb(3, 23, 90);
+    font-family: "Comic Sans MS";
+    font-style: italic;
+}
+
+.operadores{
+    color: rgb(196, 3, 3);
+    font-family: "Consolas";
+    font-style: bold;
+    font-weight: 900;
+    font-size: x-large;
+}
+
+p{
+    font-size: 25px;
+}
