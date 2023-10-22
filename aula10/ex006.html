@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background: #00152b;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 400px;
+            height: 400px;
+            background: green;
+            font: bold 80px Ebrima;
+            color: whitesmoke;
+            border-radius: 10%;
+            outline: auto;
+            
+        }
+
+        body {
+            margin: 0px;
+        }
+
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Interaja... 
+        </div>
+    </div>
+    
+    <script>
+        // Variável global
+        var area = window.document.querySelector('div.box')
+
+        // Event listener
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+       
+        // Funções      
+        function clicar(){
+            area.innerHTML = "Clicou!"
+            area.style.background = 'red'
+            var count = 1
+        }
+
+        function entrar(){
+            area.innerHTML = "Entrou!"
+            area.style.background = 'blue'
+        }
+
+        function sair(){
+            area.innerHTML = "Saiu!"
+            area.style.background = 'green'
+        }
+
+    </script>
+</body>
+</html>

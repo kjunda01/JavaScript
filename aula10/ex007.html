@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando Números</title>
+    <style>
+        body{
+            font: normal 60 Ebrima;
+        }
+        input{
+            font: normal 60 Ebrima;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            font: bold 40px Ebrima;
+            
+        }
+
+        div#res {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: end;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h1>Somando Valores</h1>
+            <hr>
+            <input type="number" name="texto1" id="texto1"> +
+            <input type="number" name="texto2" id="texto2">
+            <input type="button" value="Somar" onclick="somar()">
+        </div>
+        <div id="resposta">
+            <br>
+            A resposta é:
+            <br>
+        </div>
+    </div>
+    <script>
+        function somar(){
+            var num1 = window.document.getElementById("texto1")
+            var num2 = window.document.querySelector('input#texto2')
+            var resposta = window.document.getElementById('resposta')
+            var valor1 = Number(num1.value)
+            var valor2 = Number(num2.value)
+            soma = valor1 + valor2
+            resposta.innerHTML = `<br>O valor da soma entre ${valor1} e ${valor2} é [${soma}] `
+        }
+        
+    </script>
+</body>
+</html>
