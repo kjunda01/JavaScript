@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM - Curso JavaScript #09</title> 
+</head>
+<style>
+    body{
+        background: rgb(35, 5, 207);
+        color: whitesmoke;
+        font: normal 18pt Arial;
+    }
+</style>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <hr>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msgg">Clique em mim</div>
+    <div name="msg">Clique em mim</div>
+    <div class="msg">Clique em mim</div>
+    <div id="msg">Clique em mim</div>
+    <div class="msg1">Clique em mim</div>
+    <script>
+        window.document.write(`<br>Mensagem inicial = <u>${'Olá, mundo!'}</u>`)
+        window.document.write(`<br>Set de caracteres = <u>${window.document.charset}</u>`)
+        window.document.write(`<br>Navegador atual = <u>${window.navigator.appName}</u>`)
+        window.document.write(`<br>URL atual = <u>${window.document.URL}</u>`)
+        
+        // Utilizando Tags
+        var corpo = window.document.body 
+        var paragrafo1 = window.document.getElementsByTagName("p")[1]
+        document.write("<br>Está escrito assim: " + paragrafo1.innerText)
+        //paragrafo1.style.color = 'rgb(255, 0, 179)'
+        //corpo.style.background = 'black'
+        document.write(`<br>${paragrafo1.innerHTML}`)
+        
+        // Utilizando IDs
+        var d = document.getElementById('msgg')
+        d.style.background = 'green'
+        d.innerText = 'Mudei de "Clique em mim" para estou aguardando...'
+        // window.document.getElementById('msg').innerText = "Olá"
+        
+        // Utilizando Names
+        var d = window.document.getElementsByName('msg')[0]
+        d.style.background = 'black'
+        d.innerText = 'Mudei de "Clique em mim" para estou testando...'
+
+        // Utilizando Classes
+        var d = window.document.getElementsByClassName('msg')[0]
+        d.style.background = 'purple'
+        d.innerText = 'Mudei de "Clique em mim" para mexendo com classes...'
+
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'yellow'
+        d.style.color = 'black'
+        d.innerText = 'Mudando o "Clique em mim" com query selector - div'
+
+        var d = window.document.querySelector('div.msg1')
+        d.style.background = 'black'
+        d.style.color = 'yellow'
+        d.innerText = 'Mudando o "Clique em mim" com query selector - class'
+
+    </script>
+</body>
+</html>
+
