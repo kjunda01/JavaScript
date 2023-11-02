@@ -3,44 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Somando Números</title>
     <style>
+
         body{
-            font: normal 60 Ebrima;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
         }
-        input{
-            font: normal 60 Ebrima;
-        }
-
-        .container {
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .box {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            width: 100px;
-            height: 100px;
-            font: bold 40px Ebrima;
-            
-        }
-
-        div#res {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: end;
-
-        }
-
     </style>
+
+    <title>Somando Números</title>
 </head>
 
 <body>
@@ -66,7 +40,7 @@
             var valor1 = Number(num1.value)
             var valor2 = Number(num2.value)
             soma = valor1 + valor2
-            resposta.innerHTML = `<br>O valor da soma entre ${valor1} e ${valor2} é [${soma}] `
+            resposta.innerHTML = `<br>O valor da soma entre ${valor1} e ${valor2} é ${soma} `
         }
         
     </script>
