@@ -3,33 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-
-        body{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-        }
-    </style>
-
+    <link rel="stylesheet" href="styles7.css">
     <title>Somando Números</title>
 </head>
 
 <body>
     <div class="container">
         <div class="box">
-            <h1>Somando Valores</h1>
-            <hr>
-            <input type="number" name="texto1" id="texto1"> +
-            <input type="number" name="texto2" id="texto2">
-            <input type="button" value="Somar" onclick="somar()">
+            <header>
+                <h1>Somando Valores</h1>
+            </header>
+
+            <input type="number" name="texto1" id="texto1" placeholder="Primeiro número..."> +
+            <input type="number" name="texto2" id="texto2" placeholder="Segundo número...">
+            <input type="button" value="Somar" id="btn-somar"  onclick="somar()">
+            <input type="button" value="Limpar" id="limpar"  onclick="limpar()">
         </div>
+        
+       
+        
         <div id="resposta">
-            <br>
-            A resposta é:
-            <br>
+            <p>
+                Faça o cálculo acima.
+            </p>
         </div>
     </div>
     <script>
@@ -40,9 +36,18 @@
             var valor1 = Number(num1.value)
             var valor2 = Number(num2.value)
             soma = valor1 + valor2
-            resposta.innerHTML = `<br>O valor da soma entre ${valor1} e ${valor2} é ${soma} `
+            resposta.innerHTML = `<br>O valor da soma entre ${valor1} e ${valor2} é ${soma} ` 
         }
         
+        function limpar(){
+                var num1 = window.document.getElementById("texto1")
+                var num2 = ""
+                var resposta = "Limpado com sucesso."
+
+                var resposta = window.document.getElementById('resposta')
+
+            }
+
     </script>
 </body>
 </html>
