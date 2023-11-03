@@ -1,4 +1,4 @@
-var codes = document.getElementsByClassName("myCode");
+var codes = document.getElementsByClassName("box");
 for (var i = 0; i < codes.length; i++) {
     codes[i].addEventListener("click", function() {
         var textArea = document.createElement("textarea");
@@ -7,7 +7,7 @@ for (var i = 0; i < codes.length; i++) {
         textArea.select();
         document.execCommand("Copy");
         textArea.remove();
-        var tooltip = this.getElementsByClassName("copyTooltip")[0];
+        var tooltip = this.getElementsByClassName("Tooltip")[0];
         tooltip.textContent = "Copiado!";
         tooltip.style.visibility = "visible";
         setTimeout(function(){ 

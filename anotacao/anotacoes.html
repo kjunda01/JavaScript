@@ -18,30 +18,92 @@
             <h2><a href="https://www.youtube.com/watch?v=OmmJBfcMJA8&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=7" target="_blank">`${Nossos Primeiros Scripts}`</a></h2>
                 <p>
                     <strong>console.log</strong> serve para escrever uma mensagem no console. <br>
-                    Exemplo: <code class="myCode">console.log("Olá, mundo!");<span class="copyTooltip">Clique para copiar</span></code>
+                    Exemplo: <code class="box">console.log("Olá, mundo!");<span class="Tooltip">Clique para copiar</span></code>
                 </p>
                 <p>
                     <strong>window.alert</strong> serve para mostrar um alerta na tela, aparece um quadrinho em cima. <br>
-                    Exemplo: <code class="myCode">window.alert("Minha primeira mensagem!");<span class="copyTooltip">Clique para copiar</span></code>
+                    Exemplo: <code class="box">window.alert("Minha primeira mensagem!");<span class="Tooltip">Clique para copiar</span></code>
                 </p>
                 <p>
                     <strong>window.confirm</strong> aparece uma janela de confirmação. <br>
-                    Exemplo: <code class="myCode">window.confirm("Está gostando de JS?");<span class="copyTooltip">Clique para copiar</span></code>
+                    Exemplo: <code class="box">window.confirm("Está gostando de JS?");<span class="Tooltip">Clique para copiar</span></code>
                 </p>
                 <p>
                     <strong>window.prompt</strong> aparece uma janela perguntando alguma coisa. <br>
-                    Exemplo: <code class="myCode">window.prompt("Digite seu nome: ");<span class="copyTooltip">Clique para copiar</span></code>
+                    Exemplo: <code class="box">window.prompt("Digite seu nome: ");<span class="Tooltip">Clique para copiar</span></code>
                 </p>
-                <hr>
+        <hr>
         
         <h1>Variáveis e Tipos Primitivos - Curso JavaScript #05</h1>
                 <h2><a href="https://www.youtube.com/watch?v=Vbabsye7mWo&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=9" target="_blank">`${Tipos de Dados e Variáveis}`</a></h2>
                 <p>
                     <strong>Comentários</strong>  em JavaScript se fazem de duas formas: <br>
-                    Exemplos: <code class="myCode">//<span class="copyTooltip">Clique para copiar</span></code>para comentar somente a linha e
-                    <code class="myCode">/* */<span class="copyTooltip">Clique para copiar</span></code>para comentar o intervalo.
+                    Exemplos: <code class="box">//<span class="Tooltip">Clique para copiar</span></code>para comentar somente a linha e
+                    <code class="box">/* */<span class="Tooltip">Clique para copiar</span></code>para comentar o intervalo.
+                </p>
                 <p>
-        <a id="onde-parei" target="_blank" href="https://youtu.be/Vbabsye7mWo?si=8hRDnEvUtX0YIrj7&t=703">Parei no vídeo tal</a>
+                    <strong>Váriáveis possíveis no JavaScript: </strong> <br>
+                    <code class="box">var<span class="Tooltip">Clique para copiar</span></code> e
+                    <code class="box">let<span class="Tooltip">Clique para copiar</span></code> <br>
+                    Exemplos de variáveis e suas formas, como (" ") (' ') ou (` `): <br>
+                    <code class="box">var s1 = "JavaScript"<span class="Tooltip">Clique para copiar</span></code> <br>
+                    <code class="box">var s2 = 'Curso em Vídeo'<span class="Tooltip">Clique para copiar</span></code> <br>
+                    <code class="box">var s3 = `Guanabara`<span class="Tooltip">Clique para copiar</span></code> <br>
+                </p>
+                <p>
+                    <strong>Identificadores:</strong>
+                    <ul>
+                        <li>Podem começar com <strong>letra, $ ou _</strong></li>
+                        <li><strong>Não</strong> podem começar com números</li>
+                        <li>É possível utilizar <strong>letras</strong> ou <strong>números</strong>.</li>
+                        <li>É possível utilizar <strong>acentos</strong> e <strong>símbolos</strong>.</li>
+                        <li><strong>Não</strong> podem conter espaços</li>
+                        <li><strong>Não</strong> podem ser palavras reservadas (function, var, let, e outras)</li>
+                    </ul>
+                </p>
+                <p><strong>Dicas</strong></p>
+                <ul>
+                    <li><strong>MAIÚSCULAS</strong> e <strong>minúsculas</strong> fazem diferença.</li>
+                    <li>Tente escolher <strong>nomes coerentes</strong> para as variáveis.</li>
+                    <li>Evite se tornar um <strong>'programador alfabeto'</strong> ou um <strong>'programador contador'</strong></li>
+                    <li>Evite se tornar um <strong>'programador alfabeto'</strong> ou um <strong>'programador contador'</strong></li>  
+                </ul>
+                <p>
+                    <strong>Tipos de Dados:</strong>
+                    <ol>
+                        <li>
+                            number:
+                            <ul>
+                                <li>Infinity</li>
+                                <li>NaN</li>
+                            </ul>
+                        </li>
+                        <li>string</li>
+                        <li>boolean</li>
+                        <li>null</li>
+                        <li>undefined</li>
+                        <li>object:
+                            <ul>
+                                <li>O null pode ser considerado um object.</li>
+                                <li>Array</li>
+                            </ul>
+                        </li>
+                        <li>function</li>
+                    </ol>
+                    <p>Comando para trabalhar o tipo do dado: <code class="box">typeof<span class="Tooltip">Clique para copiar</span></code> </p>
+                </p>
+        <hr>
+
+        <h1>Tratamento de dados - Curso JavaScript #06</h1>
+        <h2><a href="https://youtu.be/OJgu_KCCUSY?si=IuSe6sePb4OalAeA" target="_blank">`${Manipulação de Dados}`</a></h2>
+            <p>
+                <strong>Guardando dados: </strong><br>
+                Exemplo: <code class="box">var nome = window.prompt('Qual é seu nome?')<span class="Tooltip"></span></code>
+            </p>
+        
+        <!-- <a id="onde-parei" target="_blank" href="https://youtu.be/Vbabsye7mWo?si=8hRDnEvUtX0YIrj7&t=703">Parei no vídeo tal</a>
+        Exemplo: <code class="box">123<span class="Tooltip"></span></code> para tal.
+        -->
     </div>
 
 

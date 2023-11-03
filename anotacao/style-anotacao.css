@@ -1,11 +1,12 @@
-.myCode {
+/*CSS para o script JS*/
+.box {
     position: relative;
     border: 0.1rem solid #000000;
     padding: 1px;
     margin: 1px;
 }
 
-.copyTooltip {
+.Tooltip {
     visibility: hidden;
     width: 120px;
     background-color: #555;
@@ -22,7 +23,7 @@
     transition: opacity 0.5s;
 }
 
-.copyTooltip::after {
+.Tooltip::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -33,7 +34,7 @@
     border-color: #203028 transparent transparent transparent;
 }
 
-.myCode:hover .copyTooltip {
+.box:hover .Tooltip {
     visibility: visible;
     opacity: 1;
 }
@@ -43,14 +44,14 @@
 }
 
 
-
+/*CSS para anotações*/
 body {
     background-color: #dad7cd;
 }
 
 code {
     color: #203028;
-    font-size: 4vh;
+    font-size: 3vh;
 }
 
 p, h1, h2 {
@@ -67,11 +68,15 @@ h2{
     font-size: 30px;
 }
 
-p{
+p, li{
     font-size: 20px;
 }
 
-
+ul, li{
+    margin-left: 0.1rem;
+    text-align: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
 
 
 #main-title {
@@ -86,7 +91,3 @@ p{
     color: #588157;
     border: 0.1rem solid #203028;
 }
-
-
-
-
