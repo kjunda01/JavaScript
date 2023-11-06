@@ -45,6 +45,11 @@
 
 
 /*CSS para anotações*/
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
 body {
     background-color: #dad7cd;
 }
@@ -54,28 +59,33 @@ code {
     font-size: 3vh;
 }
 
-p, h1, h2 {
+h1, h2 {
+    padding: 0.1rem;
+    text-align: center;
+    
+}
+
+
+p{
     padding: 0.1rem;
     text-align: start;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 h1{
-    font-size: 40px;
+    font-size: 6vh;
 }
 
 h2{
-    font-size: 30px;
+    font-size: 5vh;
 }
 
 p, li{
-    font-size: 20px;
+    font-size: 4vh;
 }
 
 ul, li{
     margin-left: 0.1rem;
     text-align: start;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
 
@@ -85,9 +95,8 @@ ul, li{
     align-items: center;
     justify-content: center;
     align-content: center;
-    font-size: 3vh;
+    font-size: 2vh;
     text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Tahoma, Geneva, Verdana, sans-serif;
     color: #588157;
     border: 0.1rem solid #203028;
 }
