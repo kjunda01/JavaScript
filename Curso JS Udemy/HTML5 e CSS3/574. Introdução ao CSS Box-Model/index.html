@@ -4,14 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>574. Introdução ao CSS Box-Model</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .section-one {
+            width: 200px;
+            background: deeppink;
+            border: 5px solid black;
+            padding: 15px;  
+        }
+       
+        .section-two {
+            background: cyan;
+        }
+    </style>
+
 </head>
 <body>
     <main>
-        <h1 style="display: flex; justify-content: center;">574. Introdução ao CSS Box-Model</h1>
-        <hr>
+        <h1 style="display: flex; justify-content: center;">574. Introdução ao CSS Box-Model</h1>   
     </main>
-
-    
-
+    <hr>
+    <section class="section-one">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id sapiente natus quisquam officia, dolorem, cumque nesciunt consectetur adipisci iure sunt eaque nostrum corporis odio sit voluptatum? Aliquam odit quasi nisi!
+    </section>
+    <section class="section-two">2</section>
 </body>
 </html>

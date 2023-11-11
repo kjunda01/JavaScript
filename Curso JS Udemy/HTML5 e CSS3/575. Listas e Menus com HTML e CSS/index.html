@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importar ícone do google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    
+    <style>
+        
+        * {
+            margin: 1px;
+            padding: 1px;
+        }
+        
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24 
+        }
+
+        .titulo-aula {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+
+        body header h1 a {
+            text-decoration: none;
+        }
+
+        .mesma-linha {
+            display: flex;
+            justify-content: space-around;
+
+        }
+
+    </style>
+    <title>575. Listas e Menus com HTML e CSS</title>
+
+</head>
+<body>
+    <header class="titulo-aula">
+        <h1 class="link-aula">
+            <!-- Chamar o link do ícone importado -->
+            <a href="https://www.udemy.com/course/curso-de-javascript-moderno-do-basico-ao-avancado/learn/lecture/24635588#overview">
+                <span class="material-symbols-outlined">auto_stories</span>
+                575. Listas e Menus com HTML e CSS
+            </a>
+        </h1>
+    </header>
+    <hr>
+    <!------------------------------------------------------------------------------------------------------------------------------>
+    <div class="listas-nao-ordenadas">
+        <h2>Listas não ordenadas:</h2>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+    </div>
+    
+    <div class="listas-ordenadas">
+        <h2>Listas ordenadas e suas propriedades:</h2>
+        <h3>Propriedades de tipo, e início:</h3>
+            <div class="mesma-linha">
+                <ol type="1" start="10">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ol>  
+                <ol type="A" start="20">
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                    <li>Item 6</li>
+                </ol>  
+                <ol type="a" start="30">
+                    <li>Item 7</li>
+                    <li>Item 8</li>
+                    <li>Item 9</li>
+                </ol>  
+                <ol type="I" start="40">
+                    <li>Item 10</li>
+                    <li>Item 11</li>
+                    <li>Item 12</li>
+                </ol>  
+                <ol type="i" start="50" >
+                    <li>Item 13</li>
+                    <li>Item 14</li>
+                    <li>Item 15</li>
+                </ol>  
+            </div>
+    </div>
+
+    <div class="listas-de-descricao">
+        <h2>Listas de descrição</h2>
+        <h3>Lista com uma descrição de cada item</h3>
+            <dl>
+                <dt>Café</dt>
+                    <dd>Uma bebida escura, normalmente quente.</dd>
+                <dt>Leite</dt>
+                    <dd>Uma bebida de cor esbranquiçada.</dd>
+            </dl>
+    </div>
+
+    <div class="resumo">
+        <h1>Resumindo:</h3>
+        <p>As listas podem ter as seguintes tags: <br>
+        <strong>ul</strong> - <em>Define uma lista não ordenada; </em><br>
+        <strong>ol</strong> - <em>Define uma lista ordenada;</em> <br>
+        <strong>li</strong> - <em>Define um item de uma lista;</em> <br>
+        <strong>dl</strong> - <em>Define uma lista de descrição;</em> <br>
+        <strong>dt</strong> - <em>Define um termo em uma lista de descrição;</em> <br>
+        <strong>dd</strong> - <em>Descreve o termo na lista de descrição;</em>
+        </p>
+    </div>
+
+</body>
+</html>
