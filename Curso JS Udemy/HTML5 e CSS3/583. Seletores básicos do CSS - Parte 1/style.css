@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+}
+
+.cabecalho {
+    background: black;
+    color: blanchedalmond;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    
+}
+
+.h1-box {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: red;
+    width: 100%;
+}
+
+.main-h1 {
+    background: purple;
+    color: rgb(50, 253, 199);
+}
+
+
+.menu {
+    background: rgb(112, 70, 70);
+    color: rgb(50, 253, 199);
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.ul-menu {
+    display: flex;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+}
+
+.link-menu-item {
+    color: white;
+    text-transform: none;
+    margin-right: 20px;
+}
+
