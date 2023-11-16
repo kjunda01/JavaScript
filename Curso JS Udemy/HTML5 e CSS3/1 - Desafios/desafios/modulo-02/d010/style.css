@@ -1,0 +1,153 @@
+/*
+Cor da fonte - #155835;
+Cor do fundo principal: #84e1ad;
+Cor extra 1: #2fa866;
+Cor extra 2: #c5ebd6;
+*/
+
+body {
+    margin: 0;
+    background: #84e1ad;
+}
+
+header {
+    background: green;
+    padding: 1vh;
+}
+
+header h1, header p {
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    text-transform: uppercase;
+}
+
+.menu {
+    padding: 0;
+    font-size: 2vh;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 1vh;
+}
+
+.menu a:hover {
+    color: black;
+    background: whitesmoke;
+    font-size: 3vh;
+}
+
+main {
+    background: rgb(255, 255, 255);
+    margin-left: 8vh;
+    margin-right: 8vh;
+    border: 2px solid black;
+    /* Mudar borda para shadow */
+}
+
+.conteudo-principal h1, .conteudo-principal h2, .conteudo-principal strong, .conteudo-principal a {
+    text-decoration: none;
+    color: #155835;
+    text-indent: 1.5vh;
+}
+
+.conteudo-principal h1, .conteudo-principal h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1vh;
+}
+
+.conteudo-principal h1 {
+    text-wrap: nowrap;
+    
+}
+
+.conteudo-principal h2 {
+    margin: 0;
+}
+
+.conteudo-principal p {
+    color: rgb(255, 0, 0);
+    text-indent: 3vh;
+    text-align: justify;
+    padding-left: 2.5vh;
+    padding-right: 2.5vh;
+}
+
+.video-android {
+    background-color: #155835;
+}
+
+.extra {
+    background: #c5ebd6;
+    margin: 2vh;
+    border: 2px solid black;
+}
+
+.titulo-extra h2 {
+    background: #2fa866;
+    color: white;
+    font-size: 2vh;
+    text-align: left;
+    text-transform: none;
+}
+
+.relacoes {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.relacao-parte-1, .relacao-parte-2{
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+
+.msg-final {
+    margin: 2vh;
+    text-align: justify;
+    text-indent: 3vh;
+}
+
+.msg-final p {
+    margin: 0;
+}
+
+.fundo-principal {
+    padding-bottom: 2vh;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background: #155835;
+    color: white;
+}
+
+address {
+    margin: 1vh;
+    text-align: center;
+}
+
+table {
+    /*Para fazer a borda ficar igual tabela*/
+    border-collapse: collapse;
+}
+
+table td {
+    border: 1px solid #155835;
+    padding: 5px;
+    text-align: left;
+}
+
+table th {
+    border: 1px solid #155835;
+    padding: 5px;
+}
