@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.box-principal {
+    background-color: #4285f4;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 20px auto; /* Adicionado margin: 20px auto; para centralizar */
+    width: 60%;
+    max-width: 600px;
+}
+
+.titulo-principal {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+section {
+    width: 60%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1, p {
+    margin: 0 0 10px;
+    font-size: 1em;
+}
+
+.resposta {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #4285f4;
+    background-color: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* Adicionando algum estilo extra para os parágrafos */
+p {
+    line-height: 1.4;
+}
+
+/* Estilo para o script.js */
+#numero-principal {
+    color: #ff5722; /* Cor laranja */
+}
+
+#raiz-quadrada {
+    color: #4caf50; /* Cor verde */
+}
+
+#verificar-numero-inteiro {
+    color: #2196f3; /* Cor azul */
+}
+
+#verificar-numero-NaN {
+    color: #f44336; /* Cor vermelha */
+}
+
+#arredondar-numero-para-baixo {
+    color: #9c27b0; /* Cor roxa */
+}
+
+#arredondar-numero-para-cima {
+    color: #ffeb3b; /* Cor amarela */
+}
+
+#casas-decimais {
+    color: #795548; /* Cor marrom */
+}
