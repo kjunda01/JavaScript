@@ -1,0 +1,39 @@
+body {
+    padding: 1vh 6vh 1vh 6vh;
+    text-align: justify;
+}
+
+header h1 {
+    color: #007c67;
+}
+
+.item-code {
+    border: 1px solid rgba(0, 0, 0, 0.158);
+    color: #EEAB4C;
+    padding: 0px 3px;
+}
+
+
+.item-code-pre {
+    color: #EEAB4C;
+
+}
+
+.str {
+    color: #19a38c;
+}
+
+p {
+    font-size: 19px;
+    text-align: justify;
+}
+
+pre {
+    font-size: 13px;
+}
+
+.comentario {
+    color: #6a6f73;
+    font-size: 16px;
+}
+
