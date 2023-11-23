@@ -1,0 +1,28 @@
+body {
+    background: rgb(193, 193, 193);
+}
+
+.operador {
+    color: brown;
+    background: brown;
+    padding: 1px;
+    margin: 1px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+pre {
+    line-height: 25px;
+}
+
+.arrow {
+    color: yellow;
+}
+
+.bool {
+    color: aliceblue;
+    background: #3B3D4B;
+    border-radius: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 3px;
+}
